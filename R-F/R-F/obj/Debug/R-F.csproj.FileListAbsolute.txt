@@ -1,0 +1,11 @@
+c:\users\andreea\documents\visual studio 2017\Projects\R-F\R-F\obj\Debug\R-F.csprojResolveAssemblyReference.cache
+c:\users\andreea\documents\visual studio 2017\Projects\R-F\R-F\bin\Debug\R-F.exe.config
+c:\users\andreea\documents\visual studio 2017\Projects\R-F\R-F\bin\Debug\R-F.exe
+c:\users\andreea\documents\visual studio 2017\Projects\R-F\R-F\bin\Debug\R-F.pdb
+c:\users\andreea\documents\visual studio 2017\Projects\R-F\R-F\obj\Debug\R-F.exe
+c:\users\andreea\documents\visual studio 2017\Projects\R-F\R-F\obj\Debug\R-F.pdb
+c:\users\andreea\documents\visual studio 2017\Projects\R-F\R-F\bin\Debug\MPI.dll
+c:\users\andreea\documents\visual studio 2017\Projects\R-F\R-F\bin\Debug\MPI.xml
+C:\Users\Claudia\Desktop\R-F\R-F\bin\Debug\R-F.exe.config
+C:\Users\Claudia\Desktop\R-F\R-F\obj\Debug\R-F.exe
+C:\Users\Claudia\Desktop\R-F\R-F\obj\Debug\R-F.pdb
