@@ -9,3 +9,6 @@ c:\users\andreea\documents\visual studio 2017\Projects\R-F\R-F\bin\Debug\MPI.xml
 C:\Users\Claudia\Desktop\R-F\R-F\bin\Debug\R-F.exe.config
 C:\Users\Claudia\Desktop\R-F\R-F\obj\Debug\R-F.exe
 C:\Users\Claudia\Desktop\R-F\R-F\obj\Debug\R-F.pdb
+C:\Users\Claudia\Documents\Visual Studio 2015\Projects\R-F\R-F\bin\Debug\R-F.exe.config
+C:\Users\Claudia\Documents\Visual Studio 2015\Projects\R-F\R-F\obj\Debug\R-F.exe
+C:\Users\Claudia\Documents\Visual Studio 2015\Projects\R-F\R-F\obj\Debug\R-F.pdb
