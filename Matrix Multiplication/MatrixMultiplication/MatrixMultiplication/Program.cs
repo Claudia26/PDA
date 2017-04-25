@@ -9,7 +9,7 @@ namespace MM
 {
     class Program
     {
-        public static int procid, numproc, size, j, k;
+        public static int processID, numberOfProcesses, size, j, k;
         public static int n = 4;
         public static int start, finish;
         public static int[,] a = { { 1, 0, 0, 1 },
@@ -34,8 +34,11 @@ namespace MM
             using (new MPI.Environment(ref args))
             {
                 Intracommunicator comm = Communicator.world;
-                procid = comm.Rank;
-                numproc = comm.Size;
+
+                processID = Communicator.world.Rank;
+
+                numberOfProcesses = Communicator.world.Size;
+
                 comm.Barrier();
                 matrixMultiply(a, b, c, comm);
 
@@ -43,14 +46,14 @@ namespace MM
         }
         public static void PrintMatrix(int[,] c)
         {
-            if (procid == 0)
+            if (processID == 0)
             {
                 for (int i = 0; i < n; ++i)
                 {
                     for (j = 0; j < n; ++j)
                     {
                         
-                        Console.WriteLine("Rank "+procid+" c[" + i + "][" + j + "] = " + c[i, j]);
+                        Console.WriteLine("Rank "+processID+" c[" + i + "][" + j + "] = " + c[i, j]);
                     }
                 }
             }
@@ -65,12 +68,12 @@ namespace MM
                 Console.WriteLine(d[k]);
 
             }
-            size = n / numproc;
-            start = procid * size;
-            finish = (procid + 1) * size;
+            size = n / numberOfProcesses;
+            start = processID * size;
+            finish = (processID + 1) * size;
             
             
-            Console.WriteLine("Proc with rank: "+procid+" is getting from: "+start+" to: "+ finish);
+            Console.WriteLine("Proc with rank: "+processID+" is getting from: "+start+" to: "+ finish);
             
             for (i = start; i <= finish; ++i)
             {
@@ -79,6 +82,7 @@ namespace MM
                     for (k = 0; k < n; ++k)
                     {
                         c[i,j] += a[i,k] * b[k,j];
+                        //le aduna toate datele in aelasi loc
                         comm.Allgather<int>(c[i,j],ref d);
                     }
                 }
@@ -89,7 +93,7 @@ namespace MM
                 Console.WriteLine("d[ "+ k +"] = "+d[k]);
             }
            
-            comm.Barrier();
+           
            
 
         }
