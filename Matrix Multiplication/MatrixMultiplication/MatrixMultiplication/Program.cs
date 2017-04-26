@@ -82,12 +82,14 @@ namespace MM
                     for (k = 0; k < n; ++k)
                     {
                         c[i,j] += a[i,k] * b[k,j];
-                        //le aduna toate datele in aelasi loc
-                        comm.Allgather<int>(c[i,j],ref d);
+                        
+                       
                     }
                 }
                 
             }
+
+            comm.Allgather<int>(c[i, j], ref d);
             for (k = 0; k < n; k++)
             {
                 Console.WriteLine("d[ "+ k +"] = "+d[k]);
