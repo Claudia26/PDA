@@ -16,3 +16,6 @@ F:\ACE\Anul4\Sem1\MAPC\Roy-Floyd (mine)\Roy-Floyd - Threads\merge cu debug\merge
 F:\ACE\Anul4\Sem1\MAPC\Roy-Floyd (mine)\Roy-Floyd - Threads\merge cu debug\merge\merge\bin\Debug\merge.exe
 F:\ACE\Anul4\Sem1\MAPC\Roy-Floyd (mine)\Roy-Floyd - Threads\merge cu debug\merge\merge\bin\Debug\merge.pdb
 F:\ACE\Anul4\Sem1\MAPC\Roy-Floyd (mine)\Roy-Floyd - Threads\merge cu debug\merge\merge\obj\Debug\merge.csprojResolveAssemblyReference.cache
+C:\Users\Claudia\Documents\PDA\RoyFloyd-Jocker\merge\merge\bin\Debug\merge.exe.config
+C:\Users\Claudia\Documents\PDA\RoyFloyd-Jocker\merge\merge\obj\Debug\merge.exe
+C:\Users\Claudia\Documents\PDA\RoyFloyd-Jocker\merge\merge\obj\Debug\merge.pdb

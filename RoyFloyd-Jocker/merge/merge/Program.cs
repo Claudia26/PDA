@@ -4,9 +4,7 @@ using System.Threading;
 
 using System.IO;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 
 struct elementQueue
@@ -119,19 +117,9 @@ public class Test
             Monitor.Wait(finish);
         }
 
-        //  for (int i = 0; i < NR_MAXIM; i++)
-        //    firstThreads[i].Abort();
-
         Console.WriteLine("Gataaa!");
-        //for (int index = 0; index < NR_MAXIM; index++)
-        //{
-        //    firstThreads[index].Interrupt();// = null;//new ParameterizedThreadStart(Consume));
-        //    //firstThreads[index].IsBackground = true;
-        //    //firstThreads[index].Start(index);
-        //}
         Console.WriteLine("Ar trebui sa se termine acum!");
         
-        //Thread.Sleep(1000);
     }
 
     public void firstPart()
@@ -147,8 +135,7 @@ public class Test
             ml.begin = i * divisations + 1;
             ml.end = (i + 1) * divisations;
             ml.threadNumber = i + 1;
-           // Console.WriteLine("thread-ul " + ml.threadNumber + " (" + ml.begin + "," + ml.end + ")");
-
+         
             firstThreads[i] = new Thread(new ParameterizedThreadStart(RoyFloyd));
             firstThreads[i].Start(ml);
         }
@@ -161,11 +148,7 @@ public class Test
         firstThreads[i] = new Thread(new ParameterizedThreadStart(RoyFloyd));
         firstThreads[i].Start(lastMl);
 
-        // p.RoyFloyd();
-        /*  
-        for (int k = 0; k <= i; k++)
-              firstThreads[k].Join();
-        */
+       
         int currentValue;
         notr.WaitOne();
         currentValue = numberOfThreadsReady;
@@ -178,7 +161,7 @@ public class Test
             notr.ReleaseMutex();
         }
 
-        //displayMatrix();
+        
         Console.WriteLine("Comparari: " + comparari);
     }
     public void secondPart()
@@ -186,7 +169,7 @@ public class Test
 
         Console.WriteLine("Incepe partea a 2-a ");
         Thread.Sleep(1000);
-        // prodCons = new ProducerConsumer();
+       
 
         elementQueue firstTask = new elementQueue();
         firstTask.start = x;
@@ -197,14 +180,7 @@ public class Test
         for (int i = 0; i < NR_MAXIM; i++)
             busyThreads[i] = 1;
 
-        //start all the threads as consumers
-        //for (int index = 0; index < NR_MAXIM; index++)
-        //{
-        //    firstThreads[index] = new Thread(new ParameterizedThreadStart(Consume));
-        //    firstThreads[index].IsBackground = true;
-        //    firstThreads[index].Start(index);
-        //}
-        // Test test = new Test();
+        
         Console.WriteLine("->push: Main Thread " + "added " + "writePath(" + x + "," + y + ")");
 
         Produce(firstTask);
@@ -221,8 +197,7 @@ public class Test
         int fileNumbers = 0;
         int[] numbers = ParseNumberFile("input.txt", ref fileNumbers);
         cost = new int[1000][];
-        //for (int i = 0; i < fileNumbers; i++)
-          //  Console.Write(numbers[i] + " ");
+       
 
         n = numbers[0];
         m = numbers[1];
@@ -244,21 +219,12 @@ public class Test
             int y = numbers[i + 1];
             int c = numbers[i + 2];
 
-            //Console.WriteLine("cost[" + x + "," + y + "]=" + c);
+          
             cost[x][y] = c;
 
         }
         Console.WriteLine();
-        /*for (int i = 1; i <= n; i++)
-        {
-            for (int j = 1; j <= n; j++)
-                if (cost[i][j] != INFINIT)
-                    Console.Write(cost[i][j] + " ");
-                else
-                    Console.Write("- ");
-
-            Console.WriteLine();
-        }*/
+      
 
         for (int z = 0; z < NR_MAXIM; z++)
             busyThreadsMutexes[z] = new Mutex();
@@ -294,8 +260,7 @@ public class Test
 
     public void updateLimits(ref int start, ref int end)
     {
-        //Console.Write("Update(" + start + "," + end + "):");
-
+       
         int differenceEndStart = end - start;
         int differenceNEnd = n - end;
         int formula = 2 * (differenceEndStart + 1);
@@ -342,7 +307,7 @@ public class Test
                     for (int j = currentStart; j <= currentEnd; j++)
                     {
                         mutex4.WaitOne();
-                        //Console.WriteLine("(" + k + "," + i + "," + j + ")");
+                        
                         comparari++;
                         mutex4.ReleaseMutex();
 
@@ -381,29 +346,11 @@ public class Test
             }
             mutex3.ReleaseMutex();
 
-            //Thread.Sleep(1000);
-            // mutex2.WaitOne();
-            // readyToGo++;
-            //mutex2.ReleaseMutex();
-
-            // mutex2.WaitOne();
-            // while (readyToGo < NR_MAXIM)
-            // {
-            //     mutex2.ReleaseMutex();
-            //     Thread.Sleep(100);
-            //     Console.WriteLine("Thread-ul " + ml.threadNumber + " face readyToGo " + readyToGo + " maxim e " + NR_MAXIM);
-            //     mutex2.WaitOne();
-            // }
-            // mutex2.ReleaseMutex();
-            //decrease readeyToGo variable for the next step
-            //  (another method is to put only one of the threads to make it 0 but that also will require another variable and mutex)
-            // mutex2.WaitOne();
-            //readyToGo = 0;
-            //mutex2.ReleaseMutex();
+            
 
             Console.WriteLine("Thread-ul" + ml.threadNumber + " face readyToGo 0");
 
-            // Thread.Sleep(1000);
+           
             updateLimits(ref currentStart, ref currentEnd);
 
             Console.WriteLine("++++++++++++++Thread-ul " + ml.threadNumber + "(" + currentStart + "," + currentEnd + ")");
@@ -458,8 +405,7 @@ public class Test
                     Produce(secondTask);
 
                     Console.WriteLine("->push: Thread Number " + eq.threadNumber + " added " + "computePath(" + k + "," + j + ")");
-                    //computePath(i, k);
-                    //computePath(k, j);
+                    
                     ok = true;
                 }
             k++;
@@ -478,7 +424,7 @@ public class Test
 
         }
 
-        //the thread becomes consumator
+       
         Consume(eq.threadNumber);
     }
 
@@ -496,16 +442,15 @@ public class Test
             Console.WriteLine("path from " + start + " to " + stop + " has weight " + cost[start][stop]);
             Console.WriteLine(" The minimum cost path is: " + start);
 
-            //change the type of task and add it in the queue.
+           
             arg.taskType = 1;
             Produce(arg);
 
-            //verificator = new Thread(new ParameterizedThreadStart(Verify));
-            //verificator.Start(100);
+           
             firstTaskAdded = true;
 
             Console.WriteLine("->push: Thread Number " + arg.threadNumber + " added " + "computePath(" + start + "," + stop + ")");
-            //the thread becomes a consumer -> is waiting for a task.
+            
             Consume(arg.threadNumber);
 
 
@@ -534,23 +479,13 @@ public class Test
     {
         int indexThread = (int)arg;
         Console.WriteLine("Thread-ul " + indexThread + " este verificator");
-        //Console.WriteLine("enter verify");
+       
         int i;
         Boolean ready = false;
 
         while (!ready)
         {
-            /*
-                        ver.WaitOne();
-                        while (true/*numberOfVerifications > 0)*/
-            // {
-            // numberOfVerifications--;
-            //ver.ReleaseMutex();
-
-            //lock (active)
-            //{
-            //    Monitor.Wait(active);
-            //}
+          
 
             Console.WriteLine("Verific!");
 
@@ -571,37 +506,20 @@ public class Test
                 lock (finish)
                 {
                     Monitor.Pulse(finish);
-                    // finishThreads = true;
-
-                    //  break;
+                    
                 }
                 ready = true;
                 Console.WriteLine("Toate threadurile asteapta, trebuie sa inceteze executia");
                 //break;
             }
             Console.WriteLine(i + "/" + NR_MAXIM);
-            //   ver.WaitOne();
-            //}
-            //ver.ReleaseMutex();
+           
         }
     }
 
     public void Produce(object o)
     {
-        //mutex.WaitOne();
-        //int nr = queue.Count;
-        //mutex.ReleaseMutex();
-
-        //while (nr == NR_MAXIM - 1)
-        //{
-        //    lock (full)
-        //    {
-        //        Monitor.Wait(full);
-        //    }
-        //    mutex.WaitOne();
-        //    nr = queue.Count;
-        //    mutex.ReleaseMutex();
-        //}
+       
 
         mutex.WaitOne();
         queue.Enqueue(o);
@@ -615,18 +533,12 @@ public class Test
 
     public void Consume(object index)
     {
-        //try
-        //{
+        
             int indexThread = (int)index;
             elementQueue popped;
-
-            //mutex.WaitOne();
+        
             Console.WriteLine("Consuming is : " + indexThread);
-            // int nr = queue.Count;
-
-            // mutex.ReleaseMutex();
-            //lock (empty)
-            //{
+           
             mutex.WaitOne();
             while (!finishThreads &&  queue.Count == 0)
             {
@@ -660,7 +572,7 @@ public class Test
 
                         lock (empty)
                         {
-                           // for(int t = 0; t <= 100 * NR_MAXIM; t++)
+                          
                             Monitor.Pulse(empty);
                         }
 
@@ -668,7 +580,7 @@ public class Test
                         {
                             Monitor.Pulse(finish);
                         }
-                        // ready = true;
+                       
                         Console.WriteLine("ELE: Toate threadurile asteapta, trebuie sa inceteze executia");
                     }
 
@@ -685,14 +597,13 @@ public class Test
 
                 if (!finishThreads)
                     mutex.WaitOne();
-                //else goto jump;
+                
             }
-        //if(mutex.
-           // mutex.ReleaseMutex();
+      
 
             if (!finishThreads)
             {
-                //mutex.WaitOne();
+                
                 popped = (elementQueue)queue.Dequeue();
                 mutex.ReleaseMutex();
 
@@ -712,19 +623,10 @@ public class Test
                 }
 
 
-                //lock (full)
-                //{
-                //    Monitor.Pulse(full);
-                //}
-                // }
+               
             }
-        //jump: 
+       
         Console.WriteLine("Thread " + indexThread + " ends gracefully");
-       // }
-        //catch (System.Threading.ThreadInterruptedException)
-        //{
-        //    Console.WriteLine("Thread " + index + " is dead");
-        //}
-        //}
+       
     }
 }

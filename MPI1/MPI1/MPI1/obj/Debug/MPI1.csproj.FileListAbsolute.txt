@@ -9,3 +9,6 @@ C:\Users\raluca\Documents\Visual Studio 2015\Projects\MPI1\MPI1\obj\Debug\MPI1.c
 E:\Importante\Facultate\Anul 3\Semestrul 2\PDA\MPI1\MPI1\MPI1\bin\Debug\MPI1.exe.config
 E:\Importante\Facultate\Anul 3\Semestrul 2\PDA\MPI1\MPI1\MPI1\obj\Debug\MPI1.exe
 E:\Importante\Facultate\Anul 3\Semestrul 2\PDA\MPI1\MPI1\MPI1\obj\Debug\MPI1.pdb
+C:\Users\Claudia\Documents\PDA\MPI1\MPI1\MPI1\bin\Debug\MPI1.exe.config
+C:\Users\Claudia\Documents\PDA\MPI1\MPI1\MPI1\obj\Debug\MPI1.exe
+C:\Users\Claudia\Documents\PDA\MPI1\MPI1\MPI1\obj\Debug\MPI1.pdb
