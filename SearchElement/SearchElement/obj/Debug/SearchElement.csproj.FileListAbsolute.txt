@@ -1,0 +1,7 @@
+c:\users\raluca\documents\visual studio 2015\Projects\SearchElement\SearchElement\bin\Debug\SearchElement.exe.config
+c:\users\raluca\documents\visual studio 2015\Projects\SearchElement\SearchElement\bin\Debug\SearchElement.exe
+c:\users\raluca\documents\visual studio 2015\Projects\SearchElement\SearchElement\bin\Debug\SearchElement.pdb
+c:\users\raluca\documents\visual studio 2015\Projects\SearchElement\SearchElement\bin\Debug\MPI.dll
+c:\users\raluca\documents\visual studio 2015\Projects\SearchElement\SearchElement\bin\Debug\MPI.xml
+c:\users\raluca\documents\visual studio 2015\Projects\SearchElement\SearchElement\obj\Debug\SearchElement.exe
+c:\users\raluca\documents\visual studio 2015\Projects\SearchElement\SearchElement\obj\Debug\SearchElement.pdb
