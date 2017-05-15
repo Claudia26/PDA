@@ -1,0 +1,18 @@
+E:\C#\MACPProiect\merge\merge\bin\Debug\merge.exe.config
+E:\C#\MACPProiect\merge\merge\bin\Debug\merge.exe
+E:\C#\MACPProiect\merge\merge\bin\Debug\merge.pdb
+E:\C#\MACPProiect\merge\merge\obj\Debug\merge.exe
+E:\C#\MACPProiect\merge\merge\obj\Debug\merge.pdb
+E:\C#\MACPProiect\merge\merge\obj\Debug\merge.csprojResolveAssemblyReference.cache
+E:\C#\MACPProiect\merge cu debug\merge\merge\bin\Debug\merge.exe.config
+E:\C#\MACPProiect\merge cu debug\merge\merge\obj\Debug\merge.exe
+E:\C#\MACPProiect\merge cu debug\merge\merge\obj\Debug\merge.pdb
+E:\C#\MACPProiect\merge cu debug\merge\merge\bin\Debug\merge.exe
+E:\C#\MACPProiect\merge cu debug\merge\merge\bin\Debug\merge.pdb
+E:\C#\MACPProiect\merge cu debug\merge\merge\obj\Debug\merge.csprojResolveAssemblyReference.cache
+F:\ACE\Anul4\Sem1\MAPC\Roy-Floyd (mine)\Roy-Floyd - Threads\merge cu debug\merge\merge\bin\Debug\merge.exe.config
+F:\ACE\Anul4\Sem1\MAPC\Roy-Floyd (mine)\Roy-Floyd - Threads\merge cu debug\merge\merge\obj\Debug\merge.exe
+F:\ACE\Anul4\Sem1\MAPC\Roy-Floyd (mine)\Roy-Floyd - Threads\merge cu debug\merge\merge\obj\Debug\merge.pdb
+F:\ACE\Anul4\Sem1\MAPC\Roy-Floyd (mine)\Roy-Floyd - Threads\merge cu debug\merge\merge\bin\Debug\merge.exe
+F:\ACE\Anul4\Sem1\MAPC\Roy-Floyd (mine)\Roy-Floyd - Threads\merge cu debug\merge\merge\bin\Debug\merge.pdb
+F:\ACE\Anul4\Sem1\MAPC\Roy-Floyd (mine)\Roy-Floyd - Threads\merge cu debug\merge\merge\obj\Debug\merge.csprojResolveAssemblyReference.cache
