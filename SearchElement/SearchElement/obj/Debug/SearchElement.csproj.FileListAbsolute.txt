@@ -5,3 +5,4 @@ c:\users\raluca\documents\visual studio 2015\Projects\SearchElement\SearchElemen
 c:\users\raluca\documents\visual studio 2015\Projects\SearchElement\SearchElement\bin\Debug\MPI.xml
 c:\users\raluca\documents\visual studio 2015\Projects\SearchElement\SearchElement\obj\Debug\SearchElement.exe
 c:\users\raluca\documents\visual studio 2015\Projects\SearchElement\SearchElement\obj\Debug\SearchElement.pdb
+C:\Users\Claudia\Documents\PDA\SearchElement\SearchElement\bin\Debug\SearchElement.exe.config
