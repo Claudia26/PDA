@@ -600,7 +600,6 @@ public class Test
                 
             }
       
-
             if (!finishThreads)
             {
                 
@@ -621,9 +620,7 @@ public class Test
                 {
                     computePath(popped);
                 }
-
-
-               
+              
             }
        
         Console.WriteLine("Thread " + indexThread + " ends gracefully");
